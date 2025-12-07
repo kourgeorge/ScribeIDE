@@ -1,0 +1,29 @@
+.sidebar,
+.editor-panel,
+.assistant-panel {
+  height: 100vh;
+  overflow: auto;
+}
+
+.sidebar {
+  background: var(--panel-2);
+  border-right: 1px solid var(--border);
+  padding: 18px;
+}
+
+.editor-panel {
+  background: var(--panel);
+  border-right: 1px solid var(--border);
+  padding: 22px 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.assistant-panel {
+  background: var(--panel-2);
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
