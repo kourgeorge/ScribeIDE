@@ -1,0 +1,62 @@
+.editor-body {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.ghost-text {
+  background: linear-gradient(180deg, rgba(123, 220, 181, 0.08), transparent);
+  border: 1px dashed var(--border);
+  padding: 12px 14px;
+  border-radius: 10px;
+}
+
+.suggestion-card {
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-header {
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.diff-block {
+  background: #0d1017;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-family: 'JetBrains Mono', 'SFMono-Regular', monospace;
+  font-size: 13px;
+}
+
+.diff-line {
+  padding: 8px 10px;
+}
+
+.diff-line + .diff-line {
+  border-top: 1px solid var(--border);
+}
+
+.diff-line.added {
+  color: var(--accent);
+}
+
+.diff-line.removed {
+  color: var(--danger);
+}
+
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}

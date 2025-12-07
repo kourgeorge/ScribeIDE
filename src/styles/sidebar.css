@@ -1,0 +1,65 @@
+.section-header {
+  font-weight: 700;
+  color: var(--muted);
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.sidebar-section + .sidebar-section {
+  margin-top: 22px;
+}
+
+.file-tree {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tree-node {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text);
+  padding: 8px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tree-node:hover {
+  background: rgba(118, 160, 255, 0.08);
+}
+
+.tree-node.selected {
+  border-color: var(--accent-2);
+  background: rgba(118, 160, 255, 0.12);
+}
+
+.node-icon {
+  width: 20px;
+}
+
+.context-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.glossary {
+  list-style: disc;
+  margin: 6px 0 0 18px;
+  padding: 0;
+  color: var(--muted);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
